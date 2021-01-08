@@ -13,6 +13,9 @@
     "type": "git",
     "url": "https://github.com/youngjuning/umi-plugin-react-native"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": [
     "umi",
     "dumi",
