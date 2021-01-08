@@ -7,3 +7,9 @@
 ```sh
 $ yarn add umi-plugin-react-native
 ```
+
+##  在线示例
+
+- https://youngjuning.js.org/preivew/react-native
+
+![](https://i.loli.net/2021/01/08/HbaNEYrqzCKMDtI.png)
