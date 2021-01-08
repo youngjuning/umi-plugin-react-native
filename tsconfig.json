@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "sourceMap": false,
+    "declaration": true,
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "strict": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["node_modules", "dist", "typings"]
+}
