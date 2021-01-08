@@ -26,20 +26,29 @@ export default (api: IApi) => {
       alias: {
         ...memo.alias,
         // Directly match react-native to react-native-web.
-        'react-native': path.resolve(__dirname,'react-native-web'),
+        'react-native$': path.resolve(__dirname,'react-native-web'),
         // Alias react-native-svg to svgs
-        'react-native-svg': 'svgs',
-        // Alias react-native-linear-gradient
+        'react-native-svg$': 'svgs',
+        // Alias react-native-linear-gradient to web
         'react-native-linear-gradient': 'react-native-web-linear-gradient',
+        // Alias react-native-maps to web
+        'react-native-maps$': 'react-native-web-maps',
         // Alias core react-native internals to react-native-web equivalents
         'react-native/Libraries/EventEmitter/RCTDeviceEventEmitter$':
         'react-native-web/dist/vendor/react-native/NativeEventEmitter/RCTDeviceEventEmitter',
-      'react-native/Libraries/vendor/emitter/EventEmitter$':
+        'react-native/Libraries/vendor/emitter/EventEmitter$':
         'react-native-web/dist/vendor/react-native/emitter/EventEmitter',
-      'react-native/Libraries/vendor/emitter/EventSubscriptionVendor$':
+        'react-native/Libraries/vendor/emitter/EventSubscriptionVendor$':
         'react-native-web/dist/vendor/react-native/emitter/EventSubscriptionVendor',
-      'react-native/Libraries/EventEmitter/NativeEventEmitter$':
+        'react-native/Libraries/EventEmitter/NativeEventEmitter$':
         'react-native-web/dist/vendor/react-native/NativeEventEmitter',
+        // Alias core react-native asset management internals to unimodule equivalents.
+        'react-native/Libraries/Image/AssetSourceResolver$':
+          'expo-asset/build/AssetSourceResolver',
+        'react-native/Libraries/Image/assetPathUtils$':
+          'expo-asset/build/Image/assetPathUtils',
+        'react-native/Libraries/Image/resolveAssetSource$':
+          'expo-asset/build/resolveAssetSource',
       },
     };
   });
