@@ -29,6 +29,8 @@ export default (api: IApi) => {
         'react-native': path.resolve(__dirname,'react-native-web'),
         // Alias react-native-svg to svgs
         'react-native-svg': 'svgs',
+        // Alias react-native-linear-gradient
+        'react-native-linear-gradient': 'react-native-web-linear-gradient',
         // Alias core react-native internals to react-native-web equivalents
         'react-native/Libraries/EventEmitter/RCTDeviceEventEmitter$':
         'react-native-web/dist/vendor/react-native/NativeEventEmitter/RCTDeviceEventEmitter',

@@ -26,5 +26,5 @@ RNImage.propTypes = {
 export const ART = ReactART;
 export const Text = RNText;
 export const Image = RNImage;
-// export const ToolbarAndroid = {};
+export const TextInput = RNTextInput;
 export const requireNativeComponent = () => {};
