@@ -5,7 +5,7 @@
 ## 安装
 
 ```sh
-$ yarn add umi-plugin-react-native
+$ yarn add umi-plugin-react-native react-native -D
 ```
 
 ##  在线示例
