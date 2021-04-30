@@ -28,7 +28,7 @@ export default (api: IApi) => {
         // Directly match react-native to react-native-web.
         'react-native$': path.resolve(__dirname,'react-native-web'),
         // Alias react-native-svg to svgs
-        'react-native-svg$': 'svgs',
+        'react-native-svg$': 'react-native-svg/lib/commonjs/ReactNativeSVG',
         // Alias react-native-linear-gradient to web
         'react-native-linear-gradient': 'react-native-web-linear-gradient',
         // Alias react-native-maps to web
