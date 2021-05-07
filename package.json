@@ -54,8 +54,7 @@
     "react-art": "^17.0.1",
     "react-native-web": "^0.14.10",
     "react-native-web-linear-gradient": "^1.1.1",
-    "react-native-web-maps": "^0.3.0",
-    "svgs": "^4.1.1"
+    "react-native-web-maps": "^0.3.0"
   },
   "config": {
     "commitizen": {
