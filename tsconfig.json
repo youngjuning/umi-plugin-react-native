@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "target": "ES5", // 指定编译生成的 JS 版本
+    "module": "commonjs", // 指定编译生成的代码使用的模块系统
+    "moduleResolution": "node", // 决定如何处理模块
     "importHelpers": true,
     "jsx": "react",
     "esModuleInterop": true,
