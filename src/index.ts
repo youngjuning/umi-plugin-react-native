@@ -13,7 +13,6 @@ export default (api: IApi) => {
 
   api.chainWebpack((config) => {
     config.resolve.extensions.add('.android.js').add('.ios.js').add('.web.js');
-    config.entry('style').add(path.resolve(__dirname, '../node_modules/rmc-picker/assets/index.css'))
     return config;
   });
 
@@ -50,8 +49,8 @@ export default (api: IApi) => {
           'expo-asset/build/Image/assetPathUtils',
         'react-native/Libraries/Image/resolveAssetSource$':
           'expo-asset/build/resolveAssetSource',
-        // Alias Picker to rmc-picker
-        './exports/Picker': 'rmc-picker'
+        // Alias Picker to lib/Picker
+        './exports/Picker$': path.resolve(__dirname, './library/Picker')
       },
     };
   });
