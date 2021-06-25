@@ -13,6 +13,7 @@ export default (api: IApi) => {
 
   api.chainWebpack((config) => {
     config.resolve.extensions.add('.android.js').add('.ios.js').add('.web.js');
+    config.entry('style').add(path.resolve(__dirname, '../src/library/Modal/css.css'))
     return config;
   });
 
@@ -50,7 +51,9 @@ export default (api: IApi) => {
         'react-native/Libraries/Image/resolveAssetSource$':
           'expo-asset/build/resolveAssetSource',
         // Alias Picker to lib/Picker
-        './exports/Picker$': path.resolve(__dirname, './library/Picker')
+        './exports/Picker$': path.resolve(__dirname, './library/Picker'),
+        // Alias Modal to lib/Modal
+        './exports/Modal$': path.resolve(__dirname, './library/Modal')
       },
     };
   });
